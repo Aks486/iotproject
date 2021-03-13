@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="This is an awesome website">
+    <title>Iot project</title>
+    <link rel="stylesheet" href="style.css"
+    <body>
+      <div class = "main">
+          <div class = "logo">
+            <img src ="images/logo.png">
+            <h1>Game Event</h1>
+          </div>
+      <div class ="Information">
+        <div class="overlay"></div>
+        <img src="images/mobile.png" class ="mobile">
+        <div id = "circle">
+          <div class = "sport one">
+            <img src ="images/football.jpg">
+            <div>
+              <h1>Football</h1>
+            </div>
+          </div> 
+          <div class = "sport two">
+            <img src ="images/basketball.jpg">
+            <div>
+              <h1>Basketball</h1>
+            </div>
+          </div> 
+          <div class = "sport three">
+            <img src ="images/volleyball.jpg">
+            <div>
+              <h1>Volleyball</h1>
+            </div>
+          </div> 
+          <div class = "sport four">
+            <img src ="images/tennis.jpg">
+            <div>
+              <h1>Table Tennis</h1>
+            </div>
+          </div> 
+        </div>
+      </div>
+       <div class="controls">
+        <img src="images/arrow.png" id="upBtn">
+        <h3>Sports</h3>
+        <img src="images/arrow.png" id="downBtn">
+      </div>
+  </div>
+     
+    <script>
+      var circle = document.getElementById("circle");
+      var upBtn = document.getElementById("upBtn");
+      var downBtn = document.getElementById("downBtn");
+      var rotatevalue = circle.style.transform;
+      var rotateSum;
+
+      upBtn.onclick = function()
+      {
+        rotateSum = rotatevalue + "rotate(-90deg)";
+        circle.style.transform = rotateSum;
+        rotatevalue = rotateSum;
+      }
+      downBtn.onclick = function()
+      {
+        rotateSum = rotatevalue + "rotate(90deg)";
+        circle.style.transform = rotateSum;
+        rotatevalue = rotateSum;
+      }
+    </script>
+
+    </body>
+
+    </head>
+
+</html>
