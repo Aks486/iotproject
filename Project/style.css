@@ -77,6 +77,7 @@ nav{
     left: 355px;
     transform: translateY(-50%);
     z-index: 1;
+    border-radius:10%;
 }
 .controls{
     position:absolute;
